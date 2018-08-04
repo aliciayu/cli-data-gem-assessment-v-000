@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 
-require "./lib/latest_movies"
+require "bundler/setup"
+require "latest_movies"
 
 LatestMovies::CLI.new.call
