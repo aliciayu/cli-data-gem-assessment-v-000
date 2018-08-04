@@ -20,7 +20,8 @@ class LatestMovies::CLI
       input = gets.strip.downcase
 
       if input.to_i > 0
-        puts @movies[input.to_i - 1]
+        the_movie = @movies[input.to_i - 1]
+        puts "#{i}. #{movie.title} - #{movie.score} - #{movie.release_date}"
       elsif input == "list"
         current_movie_list
       else
