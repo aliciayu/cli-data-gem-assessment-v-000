@@ -9,7 +9,7 @@ class LatestMovies::CLI
   def current_movie_list
     @movies = LatestMovies::Movie.today
     @movies.each.with_index[1] do |movie, i|
-      puts "#{i}. #{movie.name} - #{movie.score}"
+      puts "#{i}. #{movie.title} - #{movie.score} - #{movie.release_date}"
     end
   end
 
