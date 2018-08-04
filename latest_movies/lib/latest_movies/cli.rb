@@ -10,6 +10,7 @@ class LatestMovies::CLI
     @movies = LatestMovies::Movie.today
     @movies.each.with_index[1] do |movie, i|
       puts "#{i}. #{movie}"
+    end
   end
 
   def movie_information
