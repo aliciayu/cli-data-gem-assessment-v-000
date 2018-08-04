@@ -17,6 +17,8 @@ class LatestMovies::CLI
       input = gets.strip.downcase
       if input.to_i > 0
         puts @movies[input.to_i - 1]
+      elsif input = "list"
+        
       case input
       when "1"
         puts "The best intentions often come back to haunt you. MISSION: IMPOSSIBLE - FALLOUT finds Ethan Hunt (Tom Cruise) and his IMF team (Alec Baldwin, Simon Pegg, Ving Rhames) along with some familiar allies (Rebecca Ferguson, Michelle Monaghan) in a race against time after a mission gone wrong. Henry Cavill, Angela Bassett, and Vanessa Kirby also join the dynamic cast with filmmaker Christopher McQuarrie returning to the helm.
