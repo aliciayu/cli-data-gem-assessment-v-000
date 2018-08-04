@@ -8,6 +8,8 @@ class LatestMovies::CLI
 
   def current_movie_list
     @movies = LatestMovies::Movie.today
+    @movies.each.with_index[1] do |movie, i|
+      puts "#{i}. #{movie}"
   end
 
   def movie_information
